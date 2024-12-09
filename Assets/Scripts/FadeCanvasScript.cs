@@ -1,7 +1,5 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class FadeCanvasScript : MonoBehaviour
 {
@@ -13,15 +11,8 @@ public class FadeCanvasScript : MonoBehaviour
     
     private void Awake()
     {
-        DontDestroyOnLoad(this);
         Instance = this;
-        canvas.planeDistance = Camera.main.nearClipPlane + float.Epsilon;
-    }
-
-    private IEnumerator Start()
-    {
-        yield return new WaitForSeconds(1f);
-        ChangeSceneWithFade("MainMenuScene");
+        animator.SetTrigger("FadeOut");
     }
 
     // Функция для начала перехода сцены с затуханием
@@ -43,12 +34,6 @@ public class FadeCanvasScript : MonoBehaviour
         // Разрешаем переход к новой сцене
         sceneAO.allowSceneActivation = true;
         
-        // Активируем анимацию FadeOut после завершения загрузки сцены
-        sceneAO.completed += (_) =>
-        {
-            canvas.planeDistance = Camera.main.nearClipPlane + float.Epsilon;
-            animator.SetTrigger("FadeOut");
-        };
         sceneAO = null;
     }
 

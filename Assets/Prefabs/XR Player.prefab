@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4174362382363875296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5860883880591727134}
+    m_Modifications:
+    - target: {fileID: 1801884816467201414, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801884816467201414, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801884816467201414, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801884816467201414, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1801884816467201414, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2848480297901941220, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 5860883880591727131}
+    - target: {fileID: 8491882410802409151, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+      propertyPath: m_Name
+      value: FadeCanvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+--- !u!224 &2373331899692079718 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1801884816467201414, guid: c2ca5023337adf55eaf2080a0f9df963, type: 3}
+  m_PrefabInstance: {fileID: 4174362382363875296}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5860883879932374380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74,7 +120,10 @@ PrefabInstance:
       objectReference: {fileID: -944628639613478452, guid: efa549880e71cd6fe836a864197acf45, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2373331899692079718}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
@@ -140,6 +189,11 @@ MonoBehaviour:
   leftController: {fileID: 1376294914973201933}
   rightController: {fileID: 2291271851987499558}
   locomotionProvider: {fileID: 6013720607570143405}
+--- !u!20 &5860883880591727131 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1767192439, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 5860883879932374380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5860883880591727134 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}

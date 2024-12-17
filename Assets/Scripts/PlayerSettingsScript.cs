@@ -5,7 +5,7 @@ public class PlayerSettingsScript : MonoBehaviour
 {
     public static bool leftControllerSmoothMotion = true;
     public static bool rightControllerSmoothMotion = false;
-    public static int locomotionSpeed = 10;
+    public static int locomotionSpeed = 25;
     
     public static PlayerSettingsScript Instance { get; private set; }
     
